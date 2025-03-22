@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+}
+
+#game-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+#balloon-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border: 2px solid #000;
+  background-color: #87ceeb;
+  overflow: hidden;
+}
+
+.balloon {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 70px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.balloon:hover {
+  transform: scale(1.1);
+}
